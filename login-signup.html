@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In Staff</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/e1659de1de.js" crossorigin="anonymous"></script>
+    <!-- FONT LINKS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <!-- FONT LINKS -->
+    <link rel="stylesheet" href="./styles/login.css">
+</head>
+
+<body>
+    <header>
+        <div class="go-back">
+            <a class="Back-btn" href="./index.html"><i class="fas fa-arrow-left"></i>  Explore our new website!</a>
+        </div>
+    </header>
+    <section>
+        <div class="card">
+            <div class="box" id="card">
+                <div class="login-card">
+                    <h2 class="login-title">
+                        Log In
+                    </h2>
+                    <form action="">
+                        <input type="email" class="input-box" placeholder="example@mail.com" required>
+                        <input type="password" class="input-box" placeholder="Password" required>
+                        <button type="submit" class="submit-btn">Submit</button>
+                        <input type="checkbox"><span>Remember Me</span>
+                    </form>
+                    <button type="button" class="btn"  onclick="openRegister()">I'm New Here</button>
+                    <a class="forgotPassword" href="#">Forget Password</a>
+                </div>
+                <div class="signup-card">
+                    <h2 class="login-title">Sign Up</h2>
+                    <form action="">
+                        <input type="text" class="input-box" placeholder="Full Name" required>
+                        <input type="email" class="input-box" placeholder="example@mail.com" required>
+                        <input type="password" class="input-box" placeholder="Password" required>
+                        <button type="submit" class="submit-btn">Submit</button>
+                        <input type="checkbox"><span>Remember Me</span>
+                    </form>
+                    <button type="button" class="btn" onclick="openLogin()">I've an account</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var card = document.getElementById("card");
+        function openRegister() {
+            card.style.transform = "rotateY(-180deg)";
+        }
+        function openLogin() {
+            card.style.transform = "rotateY(0deg)";
+        }
+    </script>
+</body>
+
+</html>
