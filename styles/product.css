@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+	background-image: url(../img/Products\ –\ 1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	overflow-x: hidden;
+}
+
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgb(0, 0, 0);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar{
+	width: 8px;
+	background-color: #ffffff;
+}
+
+body::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color:#5C4033;
+}
+.cards{
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 4rem;
+    padding-bottom: 20px;
+} 
+.hoverbox{
+    position: relative;
+    background: rgba(48, 52, 59, 0.493);
+    padding: 32px;
+    overflow: hidden;
+}
+.hoverbox:hover{
+	background-color: rgba(48, 52, 59, 0.808);
+}
+
+.hoverbox h3 {
+    display: flex;
+    justify-content: center;
+	font-size: 1.25rem;
+    color: #fff;
+    margin-bottom: 1rem;
+	
+}
+.hoverbox p {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 1rem;
+}
+
+.link{
+    color: #7e472e;
+    font-size: 18px;
+    position: relative;
+    text-decoration: none;
+}
+.link::before, .link::after{
+    content: '';
+    position: absolute;
+    transition: transform 0.5s ease;
+}
+.link::before {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: #705639;
+    transform: scaleX(0);
+}
+.link:hover::before {
+    transform: scaleX(1);
+}
+.link:hover{
+    color: #6b4c3f!important;
+}
+.product{
+	width: 100%;
+}
+.product-btn{
+	display: flex;
+	justify-content: center;
+	padding: 50px;
+}
+.product-tittle{
+	color: rgba(255, 255, 255, 0.664);
+	font-size: 20px;
+	font-family: 'Shadows Into Light', cursive;
+	letter-spacing: 6px;
+	display: flex;
+	justify-content: center;
+	border: 1px solid #5C4033;
+	border-right-width: 100px;
+	border-left-width: 100px;
+	background-color: #5C4033;
+	border-radius: 30px;
+	padding: 10px;
+}
+.copyright{
+	color: white;
+}

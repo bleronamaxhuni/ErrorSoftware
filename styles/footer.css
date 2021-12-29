@@ -1,0 +1,96 @@
+/* FOOTER */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+ul{
+	list-style: none;
+	z-index: 1;
+}
+li{
+	text-align: justify;
+	z-index: 1;
+}
+footer{
+	z-index: 1;
+}
+.footer{
+	background-color:transparent;
+    padding: 150px;
+	padding-bottom: 0;
+}
+.footer-col{
+	width: 22%;
+	padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 20px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 400;
+	position: relative;
+	text-align: center;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	text-align: center;
+	margin-right: 0px;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	text-align: center;
+	margin-right: 30px;
+	transition: all 0.3s ease;
+}
+.footer-col .social-links a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+
+@media(max-width: 991px){
+	.footer-col{
+		width: 50%;
+		margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+	.footer-col{
+		width: 100%;
+}
+}
+.copyright{
+	text-align: center;
+	font-family: 'Shadows Into Light', cursive;
+	font-weight: 600;
+    font-size: 30px;
+	margin-bottom: 0;
+}
+hr {
+	background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+	height: 1px;
+	border: 0;
+}
