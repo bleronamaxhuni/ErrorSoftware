@@ -95,7 +95,34 @@ textarea::placeholder{
 	color: #3b2b23;
 }
 
-
+@media (max-width:1228px) {
+	.form > input,
+	.form > textarea{
+		width: 50vw;
+	}
+}
+@media (max-width:891px) {
+	.form > input,
+	.form > textarea{
+		width: 60vw;
+	}
+}
+@media (max-width:568px) {
+	.form > input,
+	.form > textarea{
+		width: 70vw;
+	}
+	.form > input[type="submit"]{
+		max-width:20vw ;
+		font-size: 18px;
+	}
+}
+@media (max-width:386px) {
+	.form > input[type="submit"]{
+		max-width:25vw ;
+		font-size: 15px;
+	}
+}
 /* Map */
 
 @import url('https://fonts.googleapis.com/css?family=Cousine');
@@ -199,4 +226,17 @@ textarea::placeholder{
 .company-info{
 	display: flex;
 	padding-top: 35px;
+}
+
+@media(max-width:620px){
+	.contact-field,.map-section{
+		display: block;
+	}
+	.contact-field{
+		height: 30%;
+		width: 100%;
+	}
+	#map{
+		width: 100%;
+	}
 }

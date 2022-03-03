@@ -69,17 +69,46 @@ body::-webkit-scrollbar-thumb{
 .copyright{
 	color: white;
 }
-.footer-col.dark ul li a{
+.footer-col.dark  ul li a{
+	color: #ffffff;
+	display: block;
+	text-align: center;
+	margin-right: 0px;
+	transition: all 0.3s ease;	
 	font-size: 16px;
 	text-transform: capitalize;
 	text-decoration: none;
 	font-weight: 300;
-	color: #2e2e2e81;
+}
+.footer-col.darker ul li a{
+	color: #ffffff;
 	display: block;
 	text-align: center;
 	margin-right: 0px;
-	transition: all 0.3s ease;
+	transition: all 0.3s ease;	
+	font-size: 16px;
+	text-transform: capitalize;
+	text-decoration: none;
+	font-weight: 300;
 }
-.footer-col.dark ul li a:hover{
-	padding-left: 8px;
+@media(max-width:1186px){
+	.footer-col.dark ul li a{
+		color: #00000081;
+	}
+}
+@media(max-width:991px){
+	.footer-col.dark  ul li a {
+		color: black;
+	}
+	.footer-col.darker ul li a{
+		color: black;
+	}
+}
+@media(max-width:795px){
+	.footer-col.dark ul li a{
+		color: rgb(255, 255, 255);
+	}
+	.footer-col.darker ul li a{
+		color: rgb(255, 255, 255);
+	}
 }
