@@ -112,3 +112,13 @@ body::-webkit-scrollbar-thumb{
 .copyright{
 	color: white;
 }
+@media(max-width:482px){
+    .product-tittle{
+        font-size: 17px;
+        letter-spacing: 3px;
+        padding: 7px;
+    }
+    .product-btn{
+        padding: 30px;
+    }
+}

@@ -108,7 +108,12 @@ body::-webkit-scrollbar-thumb
         display: none;
     }
 }
-
+@media(max-width:452px){
+    .positions{
+        font-size: 35px;
+        left: 30%;
+    }
+}
 .cards {
     max-width: 1200px;
     margin: 0 auto;

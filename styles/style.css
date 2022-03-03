@@ -8,10 +8,33 @@
 }
 
 body{
-	background-image: url(../img/Home\ –\ 1.png);
+	height:100%;
+    width:100%;
+    background-size: 100% 40%;
+	background-image: url(../img/Path\ 4.png);
+	background-color: #967969;
 	background-repeat: no-repeat;
-	background-size: cover;
 	overflow-x: hidden;
+}
+@media(max-width:991px){
+	body{
+		background-size: 100% 35%;
+	}
+}
+@media(max-width:725px){
+	body{
+		background-size: 100% 30%;
+	}
+}
+@media(max-width:574px){
+	body{
+		background-size: 100% 25%;
+	}
+}
+@media(max-width:498px){
+	body{
+		background-size: 100% 20%;
+	}
 }
 
 body::-webkit-scrollbar-track
@@ -78,6 +101,22 @@ body::-webkit-scrollbar-thumb{
 	text-decoration: none;
 	color: #ffffff;
 }
+@media(max-width:864px){
+	.presentation, .white-text{
+		font-size: 20px;
+	}
+}
+@media(max-width:735px){
+	.first-section{
+		padding-top: 150px;
+		padding-left:20px ;
+		padding-right: 20px;
+	}
+	.click-here{
+		font-size: 15px;
+	}
+}
+
 .about-us{
 	display: flex;
 	justify-content: center;
